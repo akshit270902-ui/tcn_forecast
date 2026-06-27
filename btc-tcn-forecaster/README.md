@@ -99,18 +99,18 @@ python scripts/train_volatility.py
 
 | Epoch | ROC-AUC |
 |---|---|
-| 10 | — |
-| 20 | — |
-| 30 | — |
-| 40 | — |
-| 50 | — |
+| 10 | — 0.5345|
+| 20 | — 0.5385|
+| 30 | — 0.5398|
+| 40 | — 0.5401|
+| 50 | — 0.5378|
 
 ### Volatility (RMSE / MAE / R²)
 
-| Model | RMSE | MAE | R² |
-|---|---|---|---|
-| TCN | — | — | — |
-| GARCH(1,1) | — | — | — |
+| Model | RMSE | R² |
+|---|---|---|
+| TCN | — 0.001124| — 0.1705|
+| GARCH(1,1) | — 0.001891| — -0.0674|
 
 > Fill in after running scripts. A ROC-AUC above 0.5 indicates directional edge; a lower RMSE than GARCH indicates the TCN captures volatility clustering not explained by the classical model.
 
