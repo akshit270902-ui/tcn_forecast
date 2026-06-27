@@ -17,7 +17,7 @@ Both use a **Temporal Convolutional Network** (TCN) with dilated causal convolut
 TCNs offer a middle ground between RNNs and transformers for sequential financial data:
 
 - **Causal convolutions** guarantee no look-ahead within the sequence
-- **Dilated layers** exponentially expand the receptive field without depth, enabling the model to capture both short-term (tick-level) and medium-term (multi-day) autocorrelation structure efficiently
+- **Dilated layers** exponentially expand the receptive field without depth, enabling the model to capture both short-term and medium-term autocorrelation structure efficiently
 - **Parallelism** — unlike LSTMs, the entire sequence is processed in one forward pass, making training and inference fast
 
 The two tasks are deliberately separated: direction and magnitude behave differently statistically, and training separate models with task-appropriate losses (BCE for direction, L1 for volatility) avoids conflating them.
